@@ -1,0 +1,36 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Slownik_z_MDI.Views"
+             xmlns:Slownik_z_MDI="clr-namespace:Slownik_z_MDI" x:Class="Slownik_z_MDI.Views.WyszukajSlowo"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="700" Loaded="UserControl_Loaded">
+    <Grid Margin="0">
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Sikma\source\repos\Slownik_z_MDI\flaga.jpg" AlignmentY="Top" AlignmentX="Center">
+            </ImageBrush>
+        </Grid.Background>
+
+        <Rectangle Fill="LightGray" HorizontalAlignment="Left" Width="500" Height="250" Margin="100,30,0,0" Stroke="{x:Null}" VerticalAlignment="Top"  Opacity="0.8"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="170,50,0,0" TextWrapping="Wrap" Text="(NO-PL) Wybierz jakie słowo chcesz przetłumaczyć:" VerticalAlignment="Top" FontSize="16" FontFamily="Segoe UI Emoji"/>
+
+        <Button Content="Przetłumacz" HorizontalAlignment="Left" Margin="300,230,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="Button_Click" Background="#000369" Foreground="White" BorderThickness="2" BorderBrush="White">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="30" Margin="270,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+
+        <Button Content="Æ æ" HorizontalAlignment="Left" Margin="155,90,0,0" VerticalAlignment="Top" Width="40" Height="25" Click="Button_Click_1" Background="#000369" Foreground="White" BorderThickness="2" BorderBrush="White"/>
+        <Button Content="Ø ø" HorizontalAlignment="Left" Margin="155,125,0,0" VerticalAlignment="Top" Width="40" Height="25" Click="Button_Click_2" Background="#000369" Foreground="White" BorderThickness="2" BorderBrush="White"/>
+        <Button Content="Å å" HorizontalAlignment="Left" Margin="155,160,0,0" VerticalAlignment="Top" Width="40" Height="25" Click="Button_Click_3" Background="#000369" Foreground="White" BorderThickness="2" BorderBrush="White"/>
+
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="200,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="299" FontSize="16" FontFamily="Segoe UI Emoji"/>
+
+    </Grid>
+</UserControl>
+
